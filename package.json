@@ -1,0 +1,21 @@
+{
+  "name": "vitepress-i18n-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vite": "^7.2.4",
+    "vitepress": "^2.0.0-alpha.15"
+  },
+  "dependencies": {
+    "pinyin": "^4.0.0"
+  }
+}

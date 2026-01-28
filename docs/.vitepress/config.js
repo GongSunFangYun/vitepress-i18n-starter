@@ -313,18 +313,18 @@ function getText(key, langCode) {
   const texts = {
     outline: {
       en: 'On this page',
-      cs: '目录',
-      ct: '目錄',
-      ja: '目次',
-      ko: '목차',
-      ru: 'Содержание',
-      es: 'En esta página',
-      pt: 'Nesta página',
-      de: 'Auf dieser Seite',
-      fr: 'Sur cette página',
-      pl: 'Na tej stronie',
-      tr: 'Bu sayfada',
-      it: 'In questa pagina'
+      cs: '页面概要',
+      ct: '頁面概要',
+      ja: 'ページ概要',
+      ko: '페이지 요약',
+      ru: 'Обзор страницы',
+      es: 'Resumen de la página',
+      pt: 'Resumo da página',
+      de: 'Seitenübersicht',
+      fr: 'Aperçu de la page',
+      pl: 'Podsumowanie strony',
+      tr: 'Sayfa özeti',
+      it: 'Riepilogo della pagina'
     },
     prev: {
       en: 'Previous',

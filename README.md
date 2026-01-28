@@ -26,11 +26,11 @@ docs/
 │   ├── index.md
 │   └── reference.md
 └── localization/              # Translated documentation
-    ├── chs/                   # Simplified Chinese
+    ├── cs/                    # Simplified Chinese
     │   ├── index.md
     │   ├── guide/
     │   └── api/
-    ├── cht/                   # Traditional Chinese
+    ├── ct/                    # Traditional Chinese
     ├── ja/                    # Japanese
     ├── ko/                    # Korean
     └── ...                    # Other languages
@@ -199,6 +199,7 @@ themeConfig: {
       text: 'Copyright © 2025 Your Company, All Rights Reserved.',
       link: '#',
     }
+    // This is actually a misuse of the navbar; in fact, you can add components here XD
     // Add more navigation items
   ]
 }

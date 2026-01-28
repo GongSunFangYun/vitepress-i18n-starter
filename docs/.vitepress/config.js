@@ -4,8 +4,8 @@ import fs from 'fs'
 
 const languages = [
   { code: 'en', label: 'English', lang: 'en-US', dir: 'ltr', path: '/', docsDir: '' },
-  { code: 'chs', label: '简体中文', lang: 'zh-CN', dir: 'ltr', path: '/localization/chs/', docsDir: 'localization/chs' },
-  { code: 'cht', label: '繁體中文', lang: 'zh-TW', dir: 'ltr', path: '/localization/cht/', docsDir: 'localization/cht' },
+  { code: 'cs', label: '简体中文', lang: 'zh-CN', dir: 'ltr', path: '/localization/cs/', docsDir: 'localization/cs' },
+  { code: 'ct', label: '繁體中文', lang: 'zh-TW', dir: 'ltr', path: '/localization/ct/', docsDir: 'localization/ct' },
   { code: 'ja', label: '日本語', lang: 'ja-JP', dir: 'ltr', path: '/localization/ja/', docsDir: 'localization/ja' },
   { code: 'ko', label: '한국어', lang: 'ko-KR', dir: 'ltr', path: '/localization/ko/', docsDir: 'localization/ko' },
   { code: 'ru', label: 'Русский', lang: 'ru-RU', dir: 'ltr', path: '/localization/ru/', docsDir: 'localization/ru' },
@@ -23,11 +23,11 @@ const languageConfigs = {
     title: 'Documentation',
     description: 'Multi-language documentation'
   },
-  chs: {
+  cs: {
     title: '文档中心',
     description: '多语言文档中心'
   },
-  cht: {
+  ct: {
     title: '文件中心',
     description: '多語言文檔中心'
   },
@@ -313,8 +313,8 @@ function getText(key, langCode) {
   const texts = {
     outline: {
       en: 'On this page',
-      chs: '目录',
-      cht: '目錄',
+      cs: '目录',
+      ct: '目錄',
       ja: '目次',
       ko: '목차',
       ru: 'Содержание',
@@ -328,8 +328,8 @@ function getText(key, langCode) {
     },
     prev: {
       en: 'Previous',
-      chs: '上一页',
-      cht: '上一頁',
+      cs: '上一页',
+      ct: '上一頁',
       ja: '前へ',
       ko: '이전',
       ru: 'Назад',
@@ -343,8 +343,8 @@ function getText(key, langCode) {
     },
     next: {
       en: 'Next',
-      chs: '下一页',
-      cht: '下一頁',
+      cs: '下一页',
+      ct: '下一頁',
       ja: '次へ',
       ko: '다음',
       ru: 'Вперёд',
@@ -358,8 +358,8 @@ function getText(key, langCode) {
     },
     appearance: {
       en: 'Appearance',
-      chs: '外观',
-      cht: '外觀',
+      cs: '外观',
+      ct: '外觀',
       ja: '外観',
       ko: '모양',
       ru: 'Внешний вид',
@@ -373,8 +373,8 @@ function getText(key, langCode) {
     },
     menu: {
       en: 'Menu',
-      chs: '菜单',
-      cht: '選單',
+      cs: '菜单',
+      ct: '選單',
       ja: 'メニュー',
       ko: '메뉴',
       ru: 'Меню',
@@ -388,8 +388,8 @@ function getText(key, langCode) {
     },
     last_updated: {
       en: 'Last updated',
-      chs: '最后更新',
-      cht: '最後更新',
+      cs: '最后更新',
+      ct: '最後更新',
       ja: '最終更新',
       ko: '마지막 업데이트',
       ru: 'Последнее обновление',
@@ -403,8 +403,8 @@ function getText(key, langCode) {
     },
     edit_page: {
       en: 'Edit this page',
-      chs: '编辑此页面',
-      cht: '編輯此頁面',
+      cs: '编辑此页面',
+      ct: '編輯此頁面',
       ja: 'このページを編集',
       ko: '이页面编辑',
       ru: 'Редактировать эту страницу',
@@ -416,6 +416,21 @@ function getText(key, langCode) {
       tr: 'Bu sayfayı düzenle',
       it: 'Modifica questa pagina'
     },
+    search_placeholder: {
+      en: 'Search documentation...',
+      cs: '搜索文档...',
+      ct: '搜尋文件...',
+      ja: 'ドキュメントを検索...',
+      ko: '문서 검색...',
+      ru: 'Поиск по документации...',
+      es: 'Buscar documentación...',
+      pt: 'Pesquisar documentação...',
+      de: 'Dokumentation durchsuchen...',
+      fr: 'Rechercher dans la documentation...',
+      pl: 'Szukaj w dokumentacji...',
+      tr: 'Belgelerde ara...',
+      it: 'Cerca nella documentazione...'
+    }
   }
 
   return texts[key]?.[langCode] || texts[key]?.en || key
@@ -507,7 +522,7 @@ export default defineConfig({
     siteTitle: false,
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com' },
+      { icon: 'github', link: 'https://github.com/username/reponame' },
     ],
 
     search: {

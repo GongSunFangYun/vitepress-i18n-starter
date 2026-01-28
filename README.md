@@ -25,7 +25,7 @@ docs/
 ├── api/                       # English API directory
 │   ├── index.md
 │   └── reference.md
-└── localization/              # Translated documentation
+└── lang/              # Translated documentation
     ├── cs/                    # Simplified Chinese
     │   ├── index.md
     │   ├── guide/
@@ -116,7 +116,7 @@ const languages = [
 ]
 
 // Add to the languageConfigs object
-const languageConfigs = {
+const languageConfigs -*-= {
   // ... existing configurations
   fr: {
     title: 'Documentation',

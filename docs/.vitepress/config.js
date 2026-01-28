@@ -4,18 +4,18 @@ import fs from 'fs'
 
 const languages = [
   { code: 'en', label: 'English', lang: 'en-US', dir: 'ltr', path: '/', docsDir: '' },
-  { code: 'cs', label: '简体中文', lang: 'zh-CN', dir: 'ltr', path: '/localization/cs/', docsDir: 'localization/cs' },
-  { code: 'ct', label: '繁體中文', lang: 'zh-TW', dir: 'ltr', path: '/localization/ct/', docsDir: 'localization/ct' },
-  { code: 'ja', label: '日本語', lang: 'ja-JP', dir: 'ltr', path: '/localization/ja/', docsDir: 'localization/ja' },
-  { code: 'ko', label: '한국어', lang: 'ko-KR', dir: 'ltr', path: '/localization/ko/', docsDir: 'localization/ko' },
-  { code: 'ru', label: 'Русский', lang: 'ru-RU', dir: 'ltr', path: '/localization/ru/', docsDir: 'localization/ru' },
-  { code: 'es', label: 'Español', lang: 'es-ES', dir: 'ltr', path: '/localization/es/', docsDir: 'localization/es' },
-  { code: 'pt', label: 'Português', lang: 'pt-BR', dir: 'ltr', path: '/localization/pt/', docsDir: 'localization/pt' },
-  { code: 'de', label: 'Deutsch', lang: 'de-DE', dir: 'ltr', path: '/localization/de/', docsDir: 'localization/de' },
-  { code: 'fr', label: 'Français', lang: 'fr-FR', dir: 'ltr', path: '/localization/fr/', docsDir: 'localization/fr' },
-  { code: 'pl', label: 'Polski', lang: 'pl-PL', dir: 'ltr', path: '/localization/pl/', docsDir: 'localization/pl' },
-  { code: 'tr', label: 'Türkçe', lang: 'tr-TR', dir: 'ltr', path: '/localization/tr/', docsDir: 'localization/tr' },
-  { code: 'it', label: 'Italiano', lang: 'it-IT', dir: 'ltr', path: '/localization/it/', docsDir: 'localization/it' }
+  { code: 'cs', label: '简体中文', lang: 'zh-CN', dir: 'ltr', path: '/lang/cs/', docsDir: 'lang/cs' },
+  { code: 'ct', label: '繁體中文', lang: 'zh-TW', dir: 'ltr', path: '/lang/ct/', docsDir: 'lang/ct' },
+  { code: 'ja', label: '日本語', lang: 'ja-JP', dir: 'ltr', path: '/lang/ja/', docsDir: 'lang/ja' },
+  { code: 'ko', label: '한국어', lang: 'ko-KR', dir: 'ltr', path: '/lang/ko/', docsDir: 'lang/ko' },
+  { code: 'ru', label: 'Русский', lang: 'ru-RU', dir: 'ltr', path: '/lang/ru/', docsDir: 'lang/ru' },
+  { code: 'es', label: 'Español', lang: 'es-ES', dir: 'ltr', path: '/lang/es/', docsDir: 'lang/es' },
+  { code: 'pt', label: 'Português', lang: 'pt-BR', dir: 'ltr', path: '/lang/pt/', docsDir: 'lang/pt' },
+  { code: 'de', label: 'Deutsch', lang: 'de-DE', dir: 'ltr', path: '/lang/de/', docsDir: 'lang/de' },
+  { code: 'fr', label: 'Français', lang: 'fr-FR', dir: 'ltr', path: '/lang/fr/', docsDir: 'lang/fr' },
+  { code: 'pl', label: 'Polski', lang: 'pl-PL', dir: 'ltr', path: '/lang/pl/', docsDir: 'lang/pl' },
+  { code: 'tr', label: 'Türkçe', lang: 'tr-TR', dir: 'ltr', path: '/lang/tr/', docsDir: 'lang/tr' },
+  { code: 'it', label: 'Italiano', lang: 'it-IT', dir: 'ltr', path: '/lang/it/', docsDir: 'lang/it' }
 ]
 
 const languageConfigs = {
@@ -522,7 +522,11 @@ export default defineConfig({
     siteTitle: false,
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/username/reponame' },
+      { icon: 'github', link: 'https://github.com/GongSunFangYun/TheMusketDocs' },
+      { icon: 'bilibili', link: 'https://space.bilibili.com/1289389911' },
+      { icon: 'youtube', link: 'https://www.youtube.com/@GongSunFangYun' },
+      { icon: 'discord', link: 'https://discord.gg/SkAwxCg3v5'},
+      { icon: 'qq', link: 'https://qm.qq.com/q/btHxAXxlbW' },
     ],
 
     search: {
@@ -563,7 +567,7 @@ export default defineConfig({
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '../../'),
-        '@localization': path.resolve(__dirname, '../docs/localization')
+        '@lang': path.resolve(__dirname, '../docs/lang')
       }
     },
     base: './'

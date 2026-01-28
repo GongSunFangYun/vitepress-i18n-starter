@@ -20,56 +20,43 @@ const languages = [
 
 const languageConfigs = {
   en: {
-    title: 'Documentation',
-    description: 'Multi-language documentation'
+    title: 'Documentation'
   },
   cs: {
-    title: '文档中心',
-    description: '多语言文档中心'
+    title: '文档中心'
   },
   ct: {
-    title: '文件中心',
-    description: '多語言文檔中心'
+    title: '文檔中心'
   },
   ja: {
-    title: 'ドキュメント',
-    description: '多言語ドキュメント'
+    title: 'ドキュメント'
   },
   ko: {
-    title: '문서',
-    description: '多言語文書'
+    title: '문서'
   },
   ru: {
-    title: 'Документация',
-    description: 'Многоязычная документация'
+    title: 'Документация'
   },
   es: {
-    title: 'Documentación',
-    description: 'Documentación multilingüe'
+    title: 'Documentación'
   },
   pt: {
-    title: 'Documentação',
-    description: 'Documentação multilíngue'
+    title: 'Documentação'
   },
   de: {
-    title: 'Dokumentation',
-    description: 'Mehrsprachige Dokumentation'
+    title: 'Dokumentation'
   },
   fr: {
-    title: 'Documentation',
-    description: 'Documentation multilingue'
+    title: 'Documentation'
   },
   pl: {
-    title: 'Dokumentacja',
-    description: 'Dokumentacja wielojęzyczna'
+    title: 'Dokumentacja'
   },
   tr: {
-    title: 'Dokümantasyon',
-    description: 'Çok dilli dokümantasyon'
+    title: 'Dokümantasyon'
   },
   it: {
-    title: 'Documentazione',
-    description: 'Documentazione multilingue'
+    title: 'Documentazione'
   }
 }
 
@@ -415,21 +402,6 @@ function getText(key, langCode) {
       pl: 'Edytuj tę stronę',
       tr: 'Bu sayfayı düzenle',
       it: 'Modifica questa pagina'
-    },
-    search_placeholder: {
-      en: 'Search documentation...',
-      cs: '搜索文档...',
-      ct: '搜尋文件...',
-      ja: 'ドキュメントを検索...',
-      ko: '문서 검색...',
-      ru: 'Поиск по документации...',
-      es: 'Buscar documentación...',
-      pt: 'Pesquisar documentação...',
-      de: 'Dokumentation durchsuchen...',
-      fr: 'Rechercher dans la documentation...',
-      pl: 'Szukaj w dokumentacji...',
-      tr: 'Belgelerde ara...',
-      it: 'Cerca nella documentazione...'
     }
   }
 

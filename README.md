@@ -106,12 +106,12 @@ To add a new language, modify the `config.js` file:
 const languages = [
   // ... existing languages
   {
-    code: 'fr',                    // Language code
+    code: 'fr',                   // Language code
     label: 'Français',            // Display name
     lang: 'fr-FR',                // Language tag for HTML
     dir: 'ltr',                   // Text direction (ltr or rtl)
-    path: '/localization/fr/',    // URL path
-    docsDir: 'localization/fr'    // Docs directory
+    path: '/lang/fr/',            // URL path
+    docsDir: 'lang/fr' 		      // Docs directory
   }
 ]
 
